@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "Ef27XV+A6qE=",
+  "dgSpecHash": "ZSIGeCOAddI=",
   "success": true,
-  "projectFilePath": "C:\\Users\\Timiry\\Desktop\\Учеба\\4 курс\\Разработка и программирование человеко-машинного интерфейса\\DesktopTranslator\\DesktopTranslator.csproj",
+  "projectFilePath": "C:\\Users\\Timiry\\Desktop\\Учеба\\4 курс\\Разработка и программирование человеко-машинного интерфейса\\Development-and-programming-of-ui\\DesktopTranslator\\DesktopTranslator.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Timiry\\.nuget\\packages\\gtranslatorapi\\1.0.0\\gtranslatorapi.1.0.0.nupkg.sha512",
     "C:\\Users\\Timiry\\.nuget\\packages\\microsoft.aspnet.webapi.client\\5.2.6\\microsoft.aspnet.webapi.client.5.2.6.nupkg.sha512",

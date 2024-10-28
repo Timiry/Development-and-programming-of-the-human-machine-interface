@@ -1,0 +1,16 @@
+C:\Users\Timiry\Desktop\Учеба\4 курс\Разработка и программирование человеко-машинного интерфейса\Rhymer\bin\Debug\net6.0-windows\Rhymer.exe
+C:\Users\Timiry\Desktop\Учеба\4 курс\Разработка и программирование человеко-машинного интерфейса\Rhymer\bin\Debug\net6.0-windows\Rhymer.deps.json
+C:\Users\Timiry\Desktop\Учеба\4 курс\Разработка и программирование человеко-машинного интерфейса\Rhymer\bin\Debug\net6.0-windows\Rhymer.runtimeconfig.json
+C:\Users\Timiry\Desktop\Учеба\4 курс\Разработка и программирование человеко-машинного интерфейса\Rhymer\bin\Debug\net6.0-windows\Rhymer.dll
+C:\Users\Timiry\Desktop\Учеба\4 курс\Разработка и программирование человеко-машинного интерфейса\Rhymer\bin\Debug\net6.0-windows\Rhymer.pdb
+C:\Users\Timiry\Desktop\Учеба\4 курс\Разработка и программирование человеко-машинного интерфейса\Rhymer\obj\Debug\net6.0-windows\Rhymer.Form1.resources
+C:\Users\Timiry\Desktop\Учеба\4 курс\Разработка и программирование человеко-машинного интерфейса\Rhymer\obj\Debug\net6.0-windows\Rhymer.csproj.GenerateResource.cache
+C:\Users\Timiry\Desktop\Учеба\4 курс\Разработка и программирование человеко-машинного интерфейса\Rhymer\obj\Debug\net6.0-windows\Rhymer.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Timiry\Desktop\Учеба\4 курс\Разработка и программирование человеко-машинного интерфейса\Rhymer\obj\Debug\net6.0-windows\Rhymer.AssemblyInfoInputs.cache
+C:\Users\Timiry\Desktop\Учеба\4 курс\Разработка и программирование человеко-машинного интерфейса\Rhymer\obj\Debug\net6.0-windows\Rhymer.AssemblyInfo.cs
+C:\Users\Timiry\Desktop\Учеба\4 курс\Разработка и программирование человеко-машинного интерфейса\Rhymer\obj\Debug\net6.0-windows\Rhymer.csproj.CoreCompileInputs.cache
+C:\Users\Timiry\Desktop\Учеба\4 курс\Разработка и программирование человеко-машинного интерфейса\Rhymer\obj\Debug\net6.0-windows\Rhymer.dll
+C:\Users\Timiry\Desktop\Учеба\4 курс\Разработка и программирование человеко-машинного интерфейса\Rhymer\obj\Debug\net6.0-windows\refint\Rhymer.dll
+C:\Users\Timiry\Desktop\Учеба\4 курс\Разработка и программирование человеко-машинного интерфейса\Rhymer\obj\Debug\net6.0-windows\Rhymer.pdb
+C:\Users\Timiry\Desktop\Учеба\4 курс\Разработка и программирование человеко-машинного интерфейса\Rhymer\obj\Debug\net6.0-windows\Rhymer.genruntimeconfig.cache
+C:\Users\Timiry\Desktop\Учеба\4 курс\Разработка и программирование человеко-машинного интерфейса\Rhymer\obj\Debug\net6.0-windows\ref\Rhymer.dll

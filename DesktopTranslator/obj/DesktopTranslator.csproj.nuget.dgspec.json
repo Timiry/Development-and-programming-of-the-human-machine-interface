@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Timiry\\Desktop\\Учеба\\4 курс\\Разработка и программирование человеко-машинного интерфейса\\DesktopTranslator\\DesktopTranslator.csproj": {}
+    "C:\\Users\\Timiry\\Desktop\\Учеба\\4 курс\\Разработка и программирование человеко-машинного интерфейса\\Development-and-programming-of-ui\\DesktopTranslator\\DesktopTranslator.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Timiry\\Desktop\\Учеба\\4 курс\\Разработка и программирование человеко-машинного интерфейса\\DesktopTranslator\\DesktopTranslator.csproj": {
+    "C:\\Users\\Timiry\\Desktop\\Учеба\\4 курс\\Разработка и программирование человеко-машинного интерфейса\\Development-and-programming-of-ui\\DesktopTranslator\\DesktopTranslator.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Timiry\\Desktop\\Учеба\\4 курс\\Разработка и программирование человеко-машинного интерфейса\\DesktopTranslator\\DesktopTranslator.csproj",
+        "projectUniqueName": "C:\\Users\\Timiry\\Desktop\\Учеба\\4 курс\\Разработка и программирование человеко-машинного интерфейса\\Development-and-programming-of-ui\\DesktopTranslator\\DesktopTranslator.csproj",
         "projectName": "DesktopTranslator",
-        "projectPath": "C:\\Users\\Timiry\\Desktop\\Учеба\\4 курс\\Разработка и программирование человеко-машинного интерфейса\\DesktopTranslator\\DesktopTranslator.csproj",
+        "projectPath": "C:\\Users\\Timiry\\Desktop\\Учеба\\4 курс\\Разработка и программирование человеко-машинного интерфейса\\Development-and-programming-of-ui\\DesktopTranslator\\DesktopTranslator.csproj",
         "packagesPath": "C:\\Users\\Timiry\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Timiry\\Desktop\\Учеба\\4 курс\\Разработка и программирование человеко-машинного интерфейса\\DesktopTranslator\\obj\\",
+        "outputPath": "C:\\Users\\Timiry\\Desktop\\Учеба\\4 курс\\Разработка и программирование человеко-машинного интерфейса\\Development-and-programming-of-ui\\DesktopTranslator\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Timiry\\AppData\\Roaming\\NuGet\\NuGet.Config",

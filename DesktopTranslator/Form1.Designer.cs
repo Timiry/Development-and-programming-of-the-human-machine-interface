@@ -34,11 +34,13 @@
             comboBoxSourceLang = new ComboBox();
             textBoxOutput = new TextBox();
             comboBoxTargetLang = new ComboBox();
+            buttonCompare = new Button();
+            label2 = new Label();
             SuspendLayout();
             // 
             // buttonTranslate
             // 
-            buttonTranslate.Location = new Point(33, 370);
+            buttonTranslate.Location = new Point(33, 455);
             buttonTranslate.Name = "buttonTranslate";
             buttonTranslate.Size = new Size(117, 45);
             buttonTranslate.TabIndex = 0;
@@ -51,7 +53,7 @@
             textBoxInput.Location = new Point(33, 125);
             textBoxInput.Multiline = true;
             textBoxInput.Name = "textBoxInput";
-            textBoxInput.Size = new Size(291, 219);
+            textBoxInput.Size = new Size(291, 299);
             textBoxInput.TabIndex = 1;
             // 
             // label1
@@ -73,25 +75,46 @@
             // 
             // textBoxOutput
             // 
-            textBoxOutput.Location = new Point(380, 125);
+            textBoxOutput.Location = new Point(358, 125);
             textBoxOutput.Multiline = true;
             textBoxOutput.Name = "textBoxOutput";
-            textBoxOutput.Size = new Size(291, 219);
+            textBoxOutput.Size = new Size(291, 299);
             textBoxOutput.TabIndex = 4;
             // 
             // comboBoxTargetLang
             // 
             comboBoxTargetLang.FormattingEnabled = true;
-            comboBoxTargetLang.Location = new Point(380, 71);
+            comboBoxTargetLang.Location = new Point(358, 71);
             comboBoxTargetLang.Name = "comboBoxTargetLang";
             comboBoxTargetLang.Size = new Size(151, 28);
             comboBoxTargetLang.TabIndex = 5;
+            // 
+            // buttonCompare
+            // 
+            buttonCompare.Location = new Point(968, 32);
+            buttonCompare.Name = "buttonCompare";
+            buttonCompare.Size = new Size(179, 45);
+            buttonCompare.TabIndex = 6;
+            buttonCompare.Text = "Сравнить переводы";
+            buttonCompare.UseVisualStyleBackColor = true;
+            buttonCompare.Click += buttonCompare_Click;
+            // 
+            // label2
+            // 
+            label2.AutoSize = true;
+            label2.Location = new Point(690, 32);
+            label2.Name = "label2";
+            label2.Size = new Size(271, 40);
+            label2.TabIndex = 7;
+            label2.Text = "Для сравнения переводов на разные\r\nязыки выберите их ниже:";
             // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 450);
+            ClientSize = new Size(1190, 526);
+            Controls.Add(label2);
+            Controls.Add(buttonCompare);
             Controls.Add(comboBoxTargetLang);
             Controls.Add(textBoxOutput);
             Controls.Add(comboBoxSourceLang);
@@ -112,5 +135,7 @@
         private ComboBox comboBoxSourceLang;
         private TextBox textBoxOutput;
         private ComboBox comboBoxTargetLang;
+        private Button buttonCompare;
+        private Label label2;
     }
 }
