@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Timiry\\Desktop\\Учеба\\4 курс\\Разработка и программирование человеко-машинного интерфейса\\Development-and-programming-of-ui\\Paint\\Paint.csproj",
+      "projectUniqueName": "C:\\Users\\Timiry\\Desktop\\Учеба\\4 курс\\Разработка и программирование человеко-машинного интерфейса\\Development-and-programming-of-ui\\Paint2\\Paint.csproj",
       "projectName": "Paint",
-      "projectPath": "C:\\Users\\Timiry\\Desktop\\Учеба\\4 курс\\Разработка и программирование человеко-машинного интерфейса\\Development-and-programming-of-ui\\Paint\\Paint.csproj",
+      "projectPath": "C:\\Users\\Timiry\\Desktop\\Учеба\\4 курс\\Разработка и программирование человеко-машинного интерфейса\\Development-and-programming-of-ui\\Paint2\\Paint.csproj",
       "packagesPath": "C:\\Users\\Timiry\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Timiry\\Desktop\\Учеба\\4 курс\\Разработка и программирование человеко-машинного интерфейса\\Development-and-programming-of-ui\\Paint\\obj\\",
+      "outputPath": "C:\\Users\\Timiry\\Desktop\\Учеба\\4 курс\\Разработка и программирование человеко-машинного интерфейса\\Development-and-programming-of-ui\\Paint2\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Timiry\\AppData\\Roaming\\NuGet\\NuGet.Config",
