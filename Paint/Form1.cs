@@ -75,6 +75,7 @@ namespace Paint
             ToolStripMenuItem copyMenu = new ToolStripMenuItem("Копировать");
             ToolStripMenuItem pasteMenu = new ToolStripMenuItem("Вставить");
             ToolStripMenuItem eyedropperMenu = new ToolStripMenuItem("Пипетка");
+            ToolStripMenuItem rotateMenu = new ToolStripMenuItem("Повернуть");
 
             loadImageMenu.Click += LoadImage;
             color1Menu.Click += ChooseColor1;
@@ -91,6 +92,7 @@ namespace Paint
             copyMenu.Click += new EventHandler(CopyToClipboard);
             pasteMenu.Click += new EventHandler(PasteFromClipboard);
             eyedropperMenu.Click += new EventHandler(ActivateEyedropper);
+            rotateMenu.Click += new EventHandler(RotateSelection);
 
             fileMenu.DropDownItems.Add(loadImageMenu);
             fileMenu.DropDownItems.Add(saveMenu);
@@ -110,7 +112,8 @@ namespace Paint
             menuStrip.Items.Add(clearMenu);
             menuStrip.Items.Add(textMenu);
             menuStrip.Items.Add(selectMenu);
-          
+            menuStrip.Items.Add(rotateMenu);
+
 
             this.MainMenuStrip = menuStrip;
             this.Controls.Add(menuStrip);
@@ -203,12 +206,12 @@ namespace Paint
                         g.DrawLine(new Pen(eraserMode ? color2 : color1, lineWidth), lastPoint, e.Location);
                     }
                 }
-                else if (brushShape == "Увеличитель яркости")
+                else if (brushShape == "Осветлитель")
                 {
                     // Увеличение яркости пикселей
                     IncreaseBrightness(e.Location);
                 }
-                else if (brushShape == "Уменьшитель яркости")
+                else if (brushShape == "Затемнитель")
                 {
                     // Увеличение яркости пикселей
                     ReduceBrightness(e.Location);
@@ -337,7 +340,9 @@ namespace Paint
 
                 if (selectedContent != null)
                 {
+                    //Graphics.FromImage(selectedContent).DrawImage(selectedContent, selectionRectangle.Location);
                     g.DrawImage(selectedContent, selectionRectangle.Location);
+                    Invalidate();
                 }
             }
         }
@@ -346,6 +351,31 @@ namespace Paint
         {
             isPickingColor = true;
             this.Cursor = Cursors.PanNorth;
+        }
+
+        private void RotateSelection(object sender, EventArgs e)
+        {
+            if (selectedContent != null)
+            {
+                // Создаем новый битмап для хранения повёрнутого изображения
+                //Bitmap rotatedImage = new Bitmap(clipboardImage.Height, clipboardImage.Width);
+                using (Graphics g = Graphics.FromImage(selectedContent))
+                {
+                    g.TranslateTransform(selectedContent.Width / 2, selectedContent.Height / 2);
+                    g.RotateTransform(90); // Поворот на 90 градусов
+                    g.TranslateTransform(-selectedContent.Width / 2, -selectedContent.Height / 2);
+                    g.DrawImage(selectedContent, new Point(0, 0));
+                }
+
+                
+
+                //// Вставляем повёрнутое изображение
+                //using (Graphics g = Graphics.FromImage(canvas))
+                //{
+                //    g.DrawImage(selectedContent, lastPoint.X, lastPoint.Y);
+                //}
+                this.Invalidate(); // Перерисовать форму
+            }
         }
 
         private void IncreaseBrightness(Point location)
@@ -360,9 +390,9 @@ namespace Paint
                         {
                             Color pixelColor = canvas.GetPixel(x, y);
                             // Увеличиваем яркость
-                            int r = Math.Clamp(pixelColor.R + 10, 0, 255);
-                            int g = Math.Clamp(pixelColor.G + 10, 0, 255);
-                            int b = Math.Clamp(pixelColor.B + 10, 0, 255);
+                            int r = Math.Clamp(pixelColor.R + 1, 0, 255);
+                            int g = Math.Clamp(pixelColor.G + 1, 0, 255);
+                            int b = Math.Clamp(pixelColor.B + 1, 0, 255);
                             Color brightenedColor = Color.FromArgb(pixelColor.A, r, g, b);
                             canvas.SetPixel(x, y, brightenedColor);
                         }
@@ -384,9 +414,9 @@ namespace Paint
                         {
                             Color pixelColor = canvas.GetPixel(x, y);
                             // Уменьшаем яркость
-                            int r = Math.Clamp(pixelColor.R - 10, 0, 255);
-                            int g = Math.Clamp(pixelColor.G - 10, 0, 255);
-                            int b = Math.Clamp(pixelColor.B - 10, 0, 255);
+                            int r = Math.Clamp(pixelColor.R - 1, 0, 255);
+                            int g = Math.Clamp(pixelColor.G - 1, 0, 255);
+                            int b = Math.Clamp(pixelColor.B - 1, 0, 255);
                             Color brightenedColor = Color.FromArgb(pixelColor.A, r, g, b);
                             canvas.SetPixel(x, y, brightenedColor);
                         }
@@ -541,7 +571,7 @@ namespace Paint
                     Dock = DockStyle.Fill,
                     DropDownStyle = ComboBoxStyle.DropDownList
                 };
-                comboBox.Items.AddRange(new string[] { "Карандаш", "Заливка", "Увеличитель яркости", "Уменьшитель яркости" });
+                comboBox.Items.AddRange(new string[] { "Карандаш", "Заливка", "Осветлитель", "Затемнитель" });
                 comboBox.SelectedItem = brushShape;
 
                 Button okButton = new Button
